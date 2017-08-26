@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('DancingScript.otf');
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:  #02010a;
+  font-family: "Dancing Script", cursive, sans-serif;
+  color: White;
+}
+
+.espacio{
+  clear: both;
+  margin:  0 auto;
+  width: 900px;
+}
+#Contenedor{
+
+}
+
+#Cabecera{
+ background-color: #5b7989;
+ border-radius: 20px 20px 0px 0px;
+ -moz-border-radius:20px 20px 0px 0px;
+ -webkit-border-radius: 20px 20px 0px 0px;
+ padding-top: 1.5em;
+ padding-bottom: 1.5em;
+}
+
+#Titulo, #menu{
+  display: inline;
+  margin: 1em;
+}
+
+#menu ul{
+  float: right;
+  display: inline;
+  list-style: none;
+}
+
+#ImagenCentral{
+  background-color: #82c3a6;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+#Imagenes{
+  background-color: #d5c75f;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/*.fotos{
+  display:flex-column;
+}*/
+
+
+#PiePagina{
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 20px 20px;
+  -moz-border-radius: 0px 0px 20px 20px
+  -webkit-border-radius: 0px 0px 20px 20px
+}
+
+  #PiePagina ul{
+    color:#02010a;
+    list-style: none;
+  }
+
+  #PiePagina h2{
+    color:#02010a;
+  }
+
+  .Columna{
+    display: inline;
+  }
