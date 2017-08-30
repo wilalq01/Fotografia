@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'Dancing Script';
     src: url('DancingScript.otf');
@@ -6,40 +7,81 @@
   margin: 0;
   padding: 0;
 }
+
+/* /////    MEDIAS QUERYS  ///// */
+
+@media (min-width:900px) {
+  #Contenedor{
+    width: 80%;
+    margin:0 auto 0 auto;
+    }
+    #menu ul{
+      float: right;
+      list-style: none;
+    }
+}
+
+@media (max-width:900px) {
+  #Contenedor{
+    width: 100%;
+    }
+
+    #Cabecera{
+      text-align: center;
+    }
+
+    #Titulo{
+      margin:0 auto 0 auto;
+    }
+
+    #menu ul{
+      margin:0 auto 0 auto;
+    }
+
+    #Titulo, #menu{
+      display: inline;
+    }
+}
+
 body{
   background-color:  #02010a;
   font-family: "Dancing Script", cursive, sans-serif;
-  color: White;
+  font-size: 16px;
 }
 
-.espacio{
-  clear: both;
-  margin:  0 auto;
-  width: 900px;
-}
-#Contenedor{
+/* /////    SECCION CABECERA  ///// */
+  #Cabecera{
+   background-color: #5b7989;
+   border-radius: 20px 20px 0px 0px;
+   -moz-border-radius:20px 20px 0px 0px;
+   -webkit-border-radius: 20px 20px 0px 0px;
+   padding-top: 1.5em;
+   padding-bottom: 1.5em;
+   color: White;
+  }
 
+#menu li{
+ display: inline;
+ margin: 0em 0.4px;
+ padding: 0.5em 0.5em;
 }
 
-#Cabecera{
- background-color: #5b7989;
- border-radius: 20px 20px 0px 0px;
- -moz-border-radius:20px 20px 0px 0px;
- -webkit-border-radius: 20px 20px 0px 0px;
- padding-top: 1.5em;
- padding-bottom: 1.5em;
-}
 
 #Titulo, #menu{
   display: inline;
-  margin: 1em;
 }
 
-#menu ul{
-  float: right;
-  display: inline;
-  list-style: none;
+#Titulo{
+  margin-left: 0.5em;
 }
+
+ #Activo{
+   text-decoration:none;
+ }
+
+.link { color: white;}
+.link:hover { color: white;}
+
 
 #ImagenCentral{
   background-color: #82c3a6;
@@ -48,34 +90,49 @@ body{
   padding-bottom: 1.5em;
 }
 
-#Imagenes{
-  background-color: #d5c75f;
-  text-align: center;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-}
 
-/*.fotos{
-  display:flex-column;
-}*/
-
+/* /////////////////////////////////////////////////////////////////
+/* /////    SECCION FOOTER  ///// */
 
 #PiePagina{
   background-color: #C6d5c5;
   border-radius: 0px 0px 20px 20px;
   -moz-border-radius: 0px 0px 20px 20px
   -webkit-border-radius: 0px 0px 20px 20px
+  color:black;
+  padding: 1.5em;
 }
 
-  #PiePagina ul{
-    color:#02010a;
-    list-style: none;
-  }
+img[src$='.svg']{
+    border-radius: 20px;
+    margin-right: 0.5em;
+}
 
-  #PiePagina h2{
-    color:#02010a;
-  }
+#PiePagina ul{
+  list-style: none;
+}
 
+.ContPie{
+  /* Width: 25%;
+  margin:0 auto 0 auto;*/
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.Columna{
+  width: 23%;
+  padding: 0.5em;
+}
+
+@media (max-width: 600px) {
   .Columna{
-    display: inline;
+    width: 46%;
+  }
+}
+
+@media (max-width: 400px) {
+  .Columna{
+    width: 92%;
   }
